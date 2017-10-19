@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>UnderwriterSystem</display-name>
+  <welcome-file-list>
+    <welcome-file>jsp/login.jsp</welcome-file>
+    
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>UserDtlController</display-name>
+    <servlet-name>UserDtlController</servlet-name>
+    <servlet-class>com.us.controller.UserDtlController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserDtlController</servlet-name>
+    <url-pattern>/UserDtlController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RuleProposalDtlController</display-name>
+    <servlet-name>RuleProposalDtlController</servlet-name>
+    <servlet-class>com.us.controller.RuleProposalDtlController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RuleProposalDtlController</servlet-name>
+    <url-pattern>/RuleProposalDtlController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>BrokerQuoteDtlController</display-name>
+    <servlet-name>BrokerQuoteDtlController</servlet-name>
+    <servlet-class>com.us.controller.BrokerQuoteDtlController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BrokerQuoteDtlController</servlet-name>
+    <url-pattern>/BrokerQuoteDtlController</url-pattern>
+  </servlet-mapping>
+</web-app>
